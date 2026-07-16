@@ -1,0 +1,56 @@
+function calcularAgua() {
+
+    let peso =
+    parseFloat(document.getElementById("peso").value);
+
+    if (isNaN(peso) || peso <= 0) {
+
+        document.getElementById("resultado").innerHTML =
+        "<h3 style='color:red'>Ingrese un peso válido</h3>";
+
+        return;
+    }
+
+    let aguaML = peso * 35;
+
+    let aguaLitros = aguaML / 1000;
+
+    let mensaje = "";
+
+    if (aguaLitros < 2) {
+
+        mensaje =
+        "⚠️ Debe prestar atención a su hidratación diaria.";
+
+    } else if (aguaLitros < 3) {
+
+        mensaje =
+        "✅ Su requerimiento hídrico es adecuado para un adulto promedio.";
+
+    } else {
+
+        mensaje =
+        "💪 Recuerde distribuir el consumo de agua durante todo el día.";
+
+    }
+
+    document.getElementById("resultado").innerHTML =
+
+        "<h2 style='color:blue'>Resultado</h2>" +
+
+        "<p><strong>Peso:</strong> " +
+        peso +
+        " kg</p>" +
+
+        "<p><strong>Agua recomendada:</strong> " +
+        aguaML.toFixed(0) +
+        " ml por día</p>" +
+
+        "<p><strong>Equivalente:</strong> " +
+        aguaLitros.toFixed(2) +
+        " litros diarios</p>" +
+
+        "<p><strong>Información:</strong><br>" +
+        mensaje +
+        "</p>";
+}
