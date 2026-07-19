@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación IMC</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>🩺 Evaluación del Índice de Masa Corporal</h1>
+
+    <p>
+        Ingrese sus datos para calcular el Índice de Masa Corporal (IMC)
+        y conocer su clasificación nutricional.
+    </p>
+
+    <br>
+
+    <label for="peso">Peso corporal (kg)</label>
+
+    <br><br>
+
+    <input
+        type="number"
+        id="peso"
+        placeholder="Ejemplo: 70">
+
+    <br><br>
+
+    <label for="altura">Altura (m)</label>
+
+    <br><br>
+
+    <input
+        type="number"
+        id="altura"
+        step="0.01"
+        placeholder="Ejemplo: 1.75">
+
+    <br><br>
+
+    <button onclick="calcularIMC()">
+        Calcular IMC
+    </button>
+
+    <button onclick="limpiarCampos()">
+        Limpiar
+    </button>
+
+    <button onclick="borrarHistorial()">
+        Borrar Historial
+    </button>
+
+    <br><br>
+
+    <div id="resultado"></div>
+
+    <div id="historial"></div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

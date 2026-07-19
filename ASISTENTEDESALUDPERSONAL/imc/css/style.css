@@ -1,0 +1,127 @@
+body{
+    background-image: url("../img/salud.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+h1{
+    color: #0a9396;
+    font-size: 45px;
+    text-shadow: 2px 2px 5px white;
+}
+
+p{
+    color: #003049;
+    font-weight: bold;
+}
+
+label{
+    color: #003049;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input{
+    padding: 12px;
+    width: 250px;
+    border: 2px solid #94d2bd;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+button{
+    background-color: #0a9396;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #005f73;
+    transform: scale(1.05);
+}
+
+#resultado{
+    margin-top: 20px;
+
+    background: rgba(255,255,255,0.88);
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    width: 500px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+
+    color: #003049;
+}
+
+#historial{
+    margin-top: 20px;
+
+    width: 500px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background: rgba(255,255,255,0.88);
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+
+    color: #003049;
+}
+
+#historial h2{
+    color: #0a9396;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #94d2bd;
+}
+
+@media (max-width: 600px){
+
+    h1{
+        font-size: 30px;
+    }
+
+    input{
+        width: 90%;
+    }
+
+    #resultado{
+        width: 90%;
+    }
+
+    #historial{
+        width: 90%;
+    }
+
+    button{
+        width: 90%;
+    }
+
+}
